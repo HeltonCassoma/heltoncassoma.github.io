@@ -9,20 +9,21 @@
 <h2>Quizz</h2>
 
 
-<form>
+<form action="form.html" method="get" method="get" action="https://postman-echo.com/get">
+
     <fieldset autocomplete="off">
     
         <legend>Insira seus dados:</legend>
 
         <label for="nome">Nome:</label>
-        <input type="Nome" name="nome" id="nome" size="20" autofocus>
+        <input type="Nome" name="nome" id="nome" size="20" autofocus required>
     
 
         <label for="apelido">Apelido:</label>
-        <input type="Apelido" name="apelido" id="apelido" size="30">
+        <input type="Apelido" name="apelido" id="apelido" size="30" required>
 
         <label for="email">Email:</label>
-        <input type="Email" name="email" id="email">
+        <input type="Email" name="email" id="email" required>
     </fieldset>
 
     <fieldset>
@@ -74,7 +75,7 @@
         <input type="range" name="range" id="range"> <br>
         
         <label for="message">Deixe a sua experiência por escrito:</label><br>
-        <textarea name="message" id="message" rows="10" cols="30" placeholder="Que tal foi estar na nossa localidade?"></textarea><br>
+        <textarea name="message" id="message" rows="10" cols="30" placeholder="Que tal foi estar na nossa localidade?" required></textarea><br>
         <input type="reset" name="Resetar" id="message"><br><br>
         
 
