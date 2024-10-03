@@ -6,12 +6,13 @@
 } */
 
 body{
+    font-size: Arial, sans-serif;
     background-color:rgb(28, 43, 63);
     font-size: 24pt;
 }
  nav a {
     color:beige;
-    border-style:double;
+
    
  }
 a:hover {
@@ -24,7 +25,8 @@ h1{
    background-color:slategrey;
    margin: 20px;
    border-radius: 8%;
-    color:aliceblue;
+    color:burlywood;
+    text-align: center;
 
     
 }
@@ -68,3 +70,8 @@ label, input {
     margin-bottom: 10px;
 }
 
+
+.localizacao{
+    color: azure;
+    font-style: inherit;
+}
