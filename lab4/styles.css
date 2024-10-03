@@ -2,16 +2,29 @@ body{
     background-color:rgb(28, 43, 63);
     font-size: 24pt;
 }
-
-nav a {
+ nav a {
     color:antiquewhite;
-    border-style:double;
-    border-bottom: navajowhite;
+   
+ }
+a:hover {
+    
+        background-color: black;
+    
+    
 }
 h1{
+
     color:aliceblue;
+    
 }
 h2{
     color:beige;
+}
+#cidade{
+    color:bisque;
+}
+
+#foot{
+    color:azure;
 }
 
