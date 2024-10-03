@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Viagem</title>
+</head>
+<body>
+    <header>
+        
+        <h1>A minha Cidade</h1>
+        <nav>
+            <a href="index.html"> Home </a>
+            <a href="local.html"> Localização </a>
+            <a href="multimedia.html"> Multimedia </a> 
+            <a href= "info.html"> Informação </a>
+            <a href="quizz.html"> Quizz</a> 
+            <a href="viagem.html"> Viagem</a>
+        </nav>
+    </header>
+    <h2>Dados da viagem</h2><br>
+    <form>
+<fieldset>
+    <legend>Nesta página vamos registar uma intenção de uma viagem à nossa cidade</legend>
+    <label for="nome">Nome:</label>
+        <input type="Nome" name="nome" id="nome" size="20" autofocus required>
+    
+
+        <label for="apelido">Apelido:</label>
+        <input type="Apelido" name="apelido" id="apelido" size="30" required>
+
+        <label for="email">Email:</label>
+        <input type="Email" name="email" id="email" required> <br><br>
+        
+        <label for="partida">Digite a data de partida:</label>
+        <input type="date" name="partida" id="partida" required><br><br>
+        
+
+        <label for="regresso">Digite a data de regresso:</label>
+        <input type="date" name="regresso" id="regresso" required><br><br>
+
+        <label for="passageiros">Digite o número de passageiros:</label>
+        <input type="number" name="number" id="passageiros" size="524"><br><br>
+
+        <p>Escolha os seus meios de transporte favorito:</p>
+        <label for="carro"> Carro</label>
+        <input type="checkbox" name="carro" id="carro">
+        <label for="comboio">Comboio</label>
+        <input type="checkbox" name="comboio" id="comboio">
+        <label for="aviao">Avião</label>
+        <input type="checkbox" name="aviao" id="aviao">
+        <label for="outros">Entre Outros</label>
+        <input type="checkbox" name="outro" id="outros">
+
+        <p>Qual serviço deseja na sua viagem?</p>
+        <label for="basico">Básico</label>
+        <input type="radio" name="servico" id="basico">
+        <label for="premium">Premium</label>
+        <input type="radio" name="servico" id="premium">
+
+        <p>Nossa missão é fazer com as nossas viagens sejam especiais e inesquecíveis para todos, então tem algum pedido especial?</p>
+        <label for="pedido"></label>
+        <textarea name="message" id="pedido" rows="10" cols="30" placeholder="Diga-nos o seu pedido!" required></textarea><br>
+        <input type="reset" name="Apagar" id="pedido">
+
+        <p>Qual o valor que deseja gastar por pessoa e por dia na sua viagem?</p>
+        <label for="gasto"></label>
+        <input type="number" name="numero" id="gasto"><br><br>
+
+        <label for="submter">Submeter</label><br>
+        <input type="image" src="images/imgEnviar.png" alt="Submeter" width="48" height="48" id="image">
+
+
+       
+
+</fieldset>
+
+    </form>
+</body>
+</html>
