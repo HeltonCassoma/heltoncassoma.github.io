@@ -1,11 +1,17 @@
 body{
-    background-color:rgb(91, 68, 110);
+    background-color:rgb(28, 43, 63);
     font-size: 24pt;
 }
 
 nav a {
-    color:black;
-    border-style:solid;
-    
+    color:antiquewhite;
+    border-style:double;
+    border-bottom: navajowhite;
+}
+h1{
+    color:aliceblue;
+}
+h2{
+    color:beige;
 }
 
