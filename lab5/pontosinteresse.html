@@ -27,11 +27,11 @@
 <form >
 <fieldset> 
     
-    <label for="pontos">Pontos de Interesse:</p></label><br>
+    <label for="pontos" id="pontos">Pontos de Interesse:</p></label><br>
         <textarea name="pontos" id="pontos" rows="1" cols="30" required></textarea><br>
         <input type="reset" name="Resetar" id="message" ><br><br>
 </fieldset>
-<fieldset>
+<fieldset id="restaurantes">
     <p>Top 5 Restaurantes:</p>
     <ol>
         <li>Disfrutar</li>
@@ -42,7 +42,7 @@
 
     </ol>
 </fieldset>
-<fieldset>
+<fieldset Id="monumentos">
     <p>Top 5 Monumentos:</p>
     <ol>
         <li>Sagrada Família</li>
@@ -52,7 +52,7 @@
         <li>Castelo de Montjuic</li>
     </ol>
 </fieldset>
-<fieldset><p>Locais a não perder</p>
+<fieldset><p id="locais">Locais a não perder:</p>
 <ul>
     <li>Sagrada Família</li>
     <li>Parque Guell</li>
@@ -63,23 +63,88 @@
     <li>Casa Batlló</li>
 </ul>
 </fieldset>
-<fieldset>
-    <p>Melhor Local para tirar foto:
+<fieldset id="local">
+    <p>Melhor local para tirar foto:
         <iframe src="images/localprafoto.jpg" width="400" height="500" frameborder="0"frameborder="1"></iframe>
     </p>
 </fieldset>
-<fieldset>
+<fieldset id="altura">
     <p>Melhor Altura para visitar</p>
-    <table>
+    <table border="3">
+        <thead>
+            <tr>
+                <th >Mês</th>
+                <th>Ranking</th>
+            </tr>
+        </thead>
+       <tbody>
         <tr>
-            <th>Estações</th>
+            <td>Jan</td>
+            <td>1/10</td>
         </tr>
         <tr>
-            <td>Verão</td>
+            <td>Fev</td>
+            <td>2/10</td>
         </tr>
         <tr>
-            <td>Primavera</td>
+            <td>Mar</td>
+            <td>2/10</td>
         </tr>
+        <tr>
+            <td>Abr</td>
+            <td>3/10</td>
+        </tr>
+        <tr>
+            <td>Mai</td>
+            <td>4/10</td>
+        </tr>
+        <tr>
+            <td>Jun</td>
+            <td>5/10</td>
+        </tr>
+        <tr>
+            <td>Jul</td>
+            <td>6/10</td>
+        </tr>
+        <tr>
+            <td>Ago</td>
+            <td>7/10</td>
+        </tr>
+        <tr>
+            <td>Set</td>
+            <td>8/10</td>
+        </tr>
+        <tr>
+            <td>Out</td>
+            <td>9/10</td>
+        </tr>
+        <tr>
+            <td>Nov</td>
+            <td>10/10</td>
+        </tr>
+        <tr>
+            <td>Dez</td>
+            <td>10/10</td>
+        </tr>
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       </tbody>
+        
     </table>
 </fieldset>
 </form>

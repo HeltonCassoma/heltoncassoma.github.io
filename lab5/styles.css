@@ -88,3 +88,30 @@ label, input {
 #poema{
     color: azure;
 }
+
+ul {
+    list-style-type:circle;
+    color:azure;
+}
+
+ol{
+    list-style-type: upper-roman;
+}
+#locais{
+    color:azure;
+}
+#restaurantes{
+    color:azure;
+}
+#monumentos{
+    color:azure;
+}
+#altura{
+    color:azure;
+}
+#local{
+    color:azure;
+}
+#pontos{
+    color:azure;
+}
