@@ -1,0 +1,12 @@
+* {
+    margin:0;  
+    padding:0;  
+    box-sizing: border-box; /* medidas sao tomadas da borda */
+}
+
+header{
+    position:sticky;
+}
+nav a :last-child{
+    background-color: aqua;
+}
