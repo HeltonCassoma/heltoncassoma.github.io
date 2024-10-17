@@ -22,10 +22,13 @@ a {
  padding: 20px;
 }
 
+nav {
 a:link{color:red}/*Link por visitar*/
 a:visited{color:white} /*Link visitado*/
 a:hover{color:darkred} /*Rato porcima do link */
-a.active{color:black} /*Link clicado*/
+a:active{color:black} /*Link clicado*/
+}
+
 
 a :last-child{
     
@@ -53,6 +56,14 @@ a :last-child{
 }
 #autor{
     position:absolute;
-    
+    bottom:0;
+   
+    width:150px;
+    height:50px;
+    color:floralwhite;
+    left:10px;
+}
+#cidades{
+    display:flex;
 }
 
