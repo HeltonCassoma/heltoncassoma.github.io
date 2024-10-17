@@ -2,12 +2,57 @@
     margin:0;  
     padding:0;  
     box-sizing: border-box; /* medidas sao tomadas da borda */
+    font-family: sans-serif;
 }
 
 header{
     position:sticky;
+    display: flex;
+    justify-content: space-between;
+    /*color:aliceblue;*/
+    background-color:darkgoldenrod;
+    align-items: center;
+    /*color:white;*/
+
 }
+
+a {
+ /*color:white;*/
+ text-decoration: none;
+ padding: 20px;
+}
+
+a:link{color:red}/*Link por visitar*/
+a:visited{color:white} /*Link visitado*/
+a:hover{color:darkred} /*Rato porcima do link */
+a.active{color:black} /*Link clicado*/
+
 a :last-child{
     
     background-color:blueviolet;
 }
+
+#poema{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    /*width: 100vw;*/
+    background-color:burlywood;
+    font-size: 1rem;
+    font-weight: bold;
+    
+}
+#paisagem{
+    position:relative;
+    
+}
+#paisagem img{
+
+    width: 100%;
+}
+#autor{
+    position:absolute;
+    
+}
+
