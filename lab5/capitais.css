@@ -65,5 +65,30 @@ a :last-child{
 }
 #cidades{
     display:flex;
+    /*flex-direction: column;*/
+    flex-wrap: wrap;
+    /*flex-flow: row wrap ;*/
+    /*justify-content: center;*/
+    /*align-content: center;*/
+    /*align-items: center;*/
+
+}
+section{
+    margin: 10px;
+}
+#cidades img{
+    width: 100px;
+    border-radius: 10px;
 }
 
+#cidades div{
+    height: 100px;
+    background-color: white;   
+}
+#cidades div:hover{
+    color:brown;
+}
+
+#cidades{
+    background-color: antiquewhite;
+}
