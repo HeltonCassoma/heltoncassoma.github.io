@@ -13,7 +13,6 @@ header{
     background-color:darkgoldenrod;
     align-items: center;
     /*color:white;*/
-
 }
 
 a {
@@ -80,6 +79,7 @@ a :last-child{
 section {
     display: flex;
     margin: 10px; 
+    font-family: "Times New Roman", 'Times New Roman', Times, serif;
 }
 
 
@@ -93,19 +93,23 @@ section {
     width: 100px;
     background-color: white; 
     border-radius: 10px;
-    align-content: center;
-    align-items: center;
+    align-content:center;
+    align-items:center;
     border-radius: 0 20px 20px 0;    
 }
 #cidades div:hover{
     color:brown;
 }
 
-#experimenta{
-
-   border-radius: 10px 10px 10px 10px;
+#experimenta div{
+    overflow: hidden;
+    display: flex;
+    border-radius: 10px ;
+    background-color:cornflowerblue;
 }
-
-
-
-
+#experimenta div:hover {
+    overflow: hidden;
+}
+#casa{
+    color:antiquewhite
+}

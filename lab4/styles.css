@@ -12,6 +12,7 @@ body{
 }
  nav a {
     color:beige;
+    text-decoration: none;
 
    
  }
@@ -25,8 +26,10 @@ h1{
    background-color:slategrey;
    margin: 20px;
    border-radius: 8%;
-    color:burlywood;
-    text-align: center;
+   color:burlywood;
+   text-align: center;
+   
+    
 }
 h2{
     color:beige;
@@ -85,5 +88,10 @@ label, input {
 }
 
 #poema{
-    color: azure;
+   
+ color: azure;
+}
+#zoom{
+    cursor:zoom-in;
+    transition: transform 0.3s ease;
 }
