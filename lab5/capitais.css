@@ -21,12 +21,13 @@ a {
  padding: 20px;
 }
 
-nav {
- a:link{color:red}/*Link por visitar*/
-a:visited{color:white} /*Link visitado*/
-a:hover{color:darkred} /*Rato porcima do link */
-a:active{color:black} /*Link clicado*/
-}
+nav a:link {color:aliceblue;}/*Link por visitar*/
+nav a:visited{color:black;}
+nav a:hover{color: white;}
+nav a:active{color:grey;}
+
+
+
 
 
 a :last-child{
@@ -89,27 +90,31 @@ section {
 }
 
 #cidades div{
-    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
     width: 100px;
-    background-color: white; 
-    border-radius: 10px;
-    align-content:center;
-    align-items:center;
-    border-radius: 0 20px 20px 0;    
+    height: 100%;
+    border-radius: 0 20px 20px 0;  
+    background-color: white;  
 }
 #cidades div:hover{
     color:brown;
 }
 
+
 #experimenta div{
-    overflow: hidden;
-    display: flex;
-    border-radius: 10px ;
-    background-color:cornflowerblue;
+    visibility: hidden;
+    transition: visibility 0.3s, opacity 0.3s;
+    opacity: 0;
 }
-#experimenta div:hover {
-    overflow: hidden;
+
+#experimenta:hover div{
+    visibility:visible; 
+    opacity: 1;
 }
+
+
 #casa{
     color:antiquewhite
 }

@@ -5,6 +5,8 @@
     border-radius: 8%;
 } */
 
+* {font-family: 'Syne Mono', monospace;
+text-decoration:none;}
 body{
     font-size: Arial, sans-serif;
     background-color:rgb(28, 43, 63);
@@ -13,8 +15,6 @@ body{
  nav a {
     color:beige;
     border-width: 40px;
-
-   
  }
 a:hover {
         
@@ -132,4 +132,10 @@ ol{
 #wiki{
     color:antiquewhite;
     text-decoration: none;
+}
+#fotografias img:hover{
+    cursor: zoom-in;
+}
+#menu a{
+    color:antiquewhite;
 }
