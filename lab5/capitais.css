@@ -22,7 +22,7 @@ a {
 }
 
 nav {
-a:link{color:red}/*Link por visitar*/
+ a:link{color:red}/*Link por visitar*/
 a:visited{color:white} /*Link visitado*/
 a:hover{color:darkred} /*Rato porcima do link */
 a:active{color:black} /*Link clicado*/
@@ -112,4 +112,8 @@ section {
 }
 #casa{
     color:antiquewhite
+}
+
+#tabela fieldset{
+    color:red;
 }

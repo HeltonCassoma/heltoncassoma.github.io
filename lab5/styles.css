@@ -113,9 +113,12 @@ ol{
 }
 #altura{
     color:azure;
-    
-    
 }
+
+#tabela tbody tr:nth-child(odd){
+    background-color:burlywood;
+}
+
 #local{
     color:azure;
 }
