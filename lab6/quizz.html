@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz</title>
+</head>
+<body>
+    <header>
+        
+        <h1>Barcelona</h1>
+        
+    </header>
+    <nav>
+        <a href="index.html"> Home </a>
+            <a href="local.html"> Localização </a>
+            <a href="multimedia.html"> Multimedia </a> 
+            <a href= "info.html"> Informação </a> 
+            <a href="quizz.html">Quizz</a>
+            <a href="viagem.html">Viagem</a>
+            <a href="pontosinteresse.html">Pontos de Interesse</a>
+            <a href="capitais.html">Capitais</a>
+    </nav>
+<h2>Quizz</h2>
+
+<form action="form.html" method="get" method="get" action="https://postman-echo.com/get" id="quizz">
+
+    <fieldset autocomplete="off">
+    
+        <legend>Insira seus dados:</legend>
+
+        <label for="nome">Nome:</label>
+        <input type="Nome" name="nome" id="nome" size="20" autofocus required>
+    
+
+        <label for="apelido">Apelido:</label>
+        <input type="Apelido" name="apelido" id="apelido" size="30" required>
+
+        <label for="email">Email:</label>
+        <input type="Email" name="email" id="email" required>
+    </fieldset>
+
+    <fieldset>
+        
+        <label for="localidade">Insira o nome da Localidade em que ficou hospedado:</label>
+        <input type="text" name="localidade" id="localidade">
+
+        <p>Já esteve nesta localidade antes?</p>
+        <label for="sim">Sim, e foi incrível</label>
+        <input type="radio"  name="visitou" id="sim">
+        
+        <label for="não">Não, estive noutra</label>
+        <input type="radio" name="visitou" id="não">
+
+        <p>Qual é a melhor época para visitar a cidade?</p>
+        <label for="verao">Verão</label>
+        <input type="checkbox" name="verao" id="verao">
+        <label for="primavera">Primavera</label>
+        <input type="checkbox" name="Primavera" id="primavera">
+        <label for="outono">Outono</label>
+        <input type="checkbox" name="outono" id="outono">
+        <label for="inverno">Inverno</label>
+        <input type="checkbox" name="inverno" id="inverno">
+        
+        <p>Qual foi a data da sua visita?</p>
+        <label for="data">Escolha a data:</label>
+        <input type="date" name="data" id="data">
+
+        <p>Qual horário gostou de sair para visitar os locais?</p>
+        <label for="hora">Escolha a hora:</label>
+        <input type="time" name="hora" id="hora">
+
+        <p>Escolha uma cor para definir a sua experiência:</p>
+        <p>Vermelho: Desagradável</p>
+        <p>Amarelo: Moderado</p>
+        <p>Verde: Muito agradável</p>
+        <label for="cor">Escolha a cor</label>
+        <input type="color" name="cor" id="cor">
+
+        <p>Quanto tempo ficou na cidade?</p>
+        <label for="number" >Digite as semanas que ficou na localidade</label>
+        <input type="number" name="number" id="number" maxlength="2">
+
+        <p>Numa escala de 0 à 10, como foi a sua experiência</p>
+        <p>0: Mau</p>
+        <p>5: Normal</p>
+        <p>10: Boa</p>
+        <label for="range">Escolha a escala (0-10):</label> <br>
+        <input type="range" name="range" id="range"> <br>
+        
+        <label for="message">Deixe a sua experiência por escrito:</label><br>
+        <textarea name="message" id="message" rows="10" cols="30" placeholder="Que tal foi estar na nossa localidade?" required></textarea><br>
+        <input type="reset" name="Resetar" id="message" ><br><br>
+        
+        <label for="image">Submeter</label><br>
+        <input type="image" src="images/imgEnviar.png" alt="Submeter" width="48" height="48" id="image">
+
+    </fieldset>
+</form>
+    
+</body>
+</html>

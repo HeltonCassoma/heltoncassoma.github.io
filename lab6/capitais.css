@@ -1,0 +1,125 @@
+* {
+    margin:0;  
+    padding:0;  
+    box-sizing: border-box; /* medidas sao tomadas da borda */
+    font-family: sans-serif;
+}
+*{box-sizing: border-box;}
+
+header{
+    position:sticky;
+    display: flex;
+    justify-content: space-between;
+    /*color:aliceblue;*/
+    background-color:darkgoldenrod;
+    align-items: center;
+    /*color:white;*/
+}
+
+a {
+ /*color:white;*/
+ text-decoration: none;
+ padding: 20px;
+}
+
+nav a:link {color:aliceblue;}/*Link por visitar*/
+nav a:visited{color:black;}
+nav a:hover{color: white;}
+nav a:active{color:grey;}
+
+
+
+
+
+a :last-child{
+    
+    background-color:blueviolet;
+}
+
+#poema{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    /*width: 100vw;*/
+    background-color:burlywood;
+    font-size: 1rem;
+    font-weight: bold;
+    
+}
+#paisagem{
+    position:relative;
+    
+}
+#paisagem img{
+
+    width: 100%;
+}
+#autor{
+    position:absolute;
+    bottom:0;
+   
+    width:150px;
+    height:50px;
+    color:floralwhite;
+    left:10px;
+}
+#cidades{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5vw;
+    background-color: antiquewhite;
+
+    /*flex-flow: row wrap ;*/
+    /*justify-content: center;*/
+    /*align-content: center;*/
+    /*align-items: center;*/  
+
+}
+section {
+    display: flex;
+    margin: 10px; 
+    font-family: "Times New Roman", 'Times New Roman', Times, serif;
+}
+
+
+#cidades img{
+    width: 100px;
+    border-radius: 20px 0 0 20px;
+}
+
+#cidades div{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100%;
+    border-radius: 0 20px 20px 0;  
+    background-color: white;  
+}
+#cidades div:hover{
+    color:brown;
+}
+
+
+#experimenta div{
+    visibility: hidden;
+    transition: visibility 0.3s, opacity 0.3s;
+    opacity: 0;
+}
+
+#experimenta:hover div{
+    visibility:visible; 
+    opacity: 1;
+}
+
+
+#casa{
+    color:antiquewhite
+}
+
+#tabela fieldset{
+    color:red;
+}
