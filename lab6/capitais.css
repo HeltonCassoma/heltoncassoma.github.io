@@ -4,7 +4,6 @@
     box-sizing: border-box; /* medidas sao tomadas da borda */
     font-family: sans-serif;
 }
-*{box-sizing: border-box;}
 
 header{
     position:sticky;
@@ -26,16 +25,14 @@ nav a:link {color:aliceblue;}/*Link por visitar*/
 nav a:visited{color:black;}
 nav a:hover{color: white;}
 nav a:active{color:grey;}
-
-
-
-
-
 a :last-child{
     
     background-color:blueviolet;
 }
-
+header {
+    display: flex;
+    justify-content: space-around;
+}
 #poema{
     display:flex;
     justify-content: center;
@@ -122,4 +119,10 @@ section {
 
 #tabela fieldset{
     color:red;
+}
+.texto{
+    margin-left: 20px;
+}
+#experimenta {
+    margin-left: 20px;
 }
