@@ -1,4 +1,14 @@
-/* Definições globais e layout padrão */
+*{box-sizing: border-box;}
+header{
+    position:sticky;
+    display: flex;
+    justify-content: space-around;
+    /*color:aliceblue;*/
+    background-color:gainsboro;
+    align-items: center;
+    /*color:white;*/
+}
+
 section {
     padding: 10px;
     
@@ -74,4 +84,36 @@ section {
     section {
         padding: 30px;
     }
+}
+
+footer{
+    position: sticky;
+    display: flex;
+    background-color:gainsboro;
+}
+
+#lista {
+    list-style-type:none;
+}
+
+#labs{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5vw;
+    background-color: white;
+ }
+
+#labs div { 
+    
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 100%; 
+        background-color: white;  
+    } 
+#labs div:hover{
+    color:black;
 }
