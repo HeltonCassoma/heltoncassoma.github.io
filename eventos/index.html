@@ -11,30 +11,47 @@
     <h1>Exemplo de Eventos em JavaScript</h1>
 
     <h2>Eventos de Rato</h2>
-    <div>
-        <p id="pinta">1. Pinta-me!</p> 
+    <fieldset>
 
-        <button id="red">Red</button> 
-        <button id="green">Green</button>
-        <button id ="blue">Blue</button>
-         <br>
-         <br>
-
-        <button id="duploclick">2. Dê duplo clique aqui!</button>
-        <br>
-
-        <p id="sob">3. Passe o Mouse Aqui!</p>
-        <p id="out">4. Passe o Mouse sobre mim</p>
-    </div>
+        <div>
+            <p id="pinta">1. Pinta-me!</p> 
+            <button id="red">Red</button> 
+            <button id="green">Green</button>
+            <button id ="blue">Blue</button>
+             <br>
+             <br>
     
-
-
-
-
+            <button id="duploclick">2. Dê duplo clique aqui!</button>
+            <br>
+    
+            <p id="sob">3. Passe o Mouse Aqui!</p>
+    
+            <p id="out">4. Passe o Mouse sobre mim</p>
+            
+            <p id="move">5. Passe o mouse aqui </p>
+        </div>
+   
+    </fieldset>
+       
     <h2>Eventos de Teclado</h2>
+
+    <fieldset>
+        <p id="tecladown"> 1. Pressione uma tecla!</p>
+
+        <p id="teclaup"> 2. Pressione e solte uma tecla!</p>
+    </fieldset>
     
     <h2>Eventos de Formulário</h2>
-    
+    <fieldset id="form1">
+        <label for="Nome">Nome:</label>
+        <input type="text" id="Nome" name="nome" required>
+
+        <label for="Email"> Email:</label>
+        <input type="email" name="Email" id="email" required>
+
+        <button type="submit">Enviar</button>
+
+    </fieldset>
 
     <script src="script.js"></script>
 </body>
