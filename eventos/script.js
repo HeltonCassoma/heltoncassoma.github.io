@@ -1,40 +1,45 @@
-// Evento de Rato
-document.getElementById("clickArea").addEventListener("click", function() {
-    document.getElementById("result").innerText = "Evento 'click' ativado!";
+const mensagem = document.getElementById('sob');
+document.querySelector('#red').onclick = function() {
+    document.querySelector("#pinta").style.color = "red";
+};
+document.querySelector('#green').onclick = function() {
+    document.querySelector("#pinta").style.color = "green";
+};
+document.querySelector('#blue').onclick = function() {
+    document.querySelector("#pinta").style.color = "blue";
+};
+
+// script.js
+// Seleciona o elemento pelo ID
+var elemento = document.getElementById('duploclick');
+
+// Adiciona um ouvinte de evento para o duplo clique
+elemento.addEventListener('dblclick', function() {
+    alert('Você nasceu para ser feliz, não te distraias!');
 });
 
-document.getElementById("dbclickArea").addEventListener("dblclick", function() {
-    document.getElementById("result").innerText = "Evento 'dblclick' ativado!";
+
+mensagem.addEventListener('mouseover', () => {
+    mensagem.innerText = "3. Você nasceu para ser feliz, não te distraias! \n"
+     + " Helton Cassoma"
+    ;
+}); 
+mensagem.addEventListener('mouseleave', () =>{
+    mensagem.innerText = "3. Passe o Mouse Aqui!";
 });
 
-document.getElementById("mouseoverArea").addEventListener("mouseover", function() {
-    document.getElementById("result").innerText = "Evento 'mouseover' ativado!";
+const elemento = document.getElementById('out');
+ 
+elemento.addEventListener('mouseover', () =>
+{
+    /** Muda a cor do fundo e aumenta o tamanho */
+    elemento.style.backgroundColor = '#2980b9';
+    elemento.style.transform = 'scale(1.1)';
 });
 
-document.getElementById("mouseoutArea").addEventListener("mouseout", function() {
-    document.getElementById("result").innerText = "Evento 'mouseout' ativado!";
-});
+elemento.addEventListener('mouseout', () =>
+{
+    elemento.style.backgroundColor = '#3498db';
+    elemento.style.transform = 'scale(1)';
 
-document.getElementById("mousemoveArea").addEventListener("mousemove", function() {
-    document.getElementById("result").innerText = "Evento 'mousemove' ativado!";
-});
-
-// Evento de Teclado
-document.getElementById("textInput").addEventListener("keydown", function() {
-    document.getElementById("keyboardOutput").innerText = "Você pressionou uma tecla!";
-});
-
-document.getElementById("textInput").addEventListener("keyup", function() {
-    document.getElementById("keyboardOutput").innerText = "Você soltou uma tecla!";
-});
-
-// Evento de Formulário
-document.getElementById("form").addEventListener("submit", function(event) {
-    event.preventDefault();  // Impede o envio real do formulário
-    const formInput = document.getElementById("formInput").value;
-    document.getElementById("formOutput").innerText = "Formulário enviado com o nome: " + formInput;
-});
-
-document.getElementById("formInput").addEventListener("change", function() {
-    document.getElementById("formOutput").innerText = "Campo alterado para: " + this.value;
 });

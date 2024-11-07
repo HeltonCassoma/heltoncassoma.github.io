@@ -11,28 +11,30 @@
     <h1>Exemplo de Eventos em JavaScript</h1>
 
     <h2>Eventos de Rato</h2>
-    <p id="clickArea" class="event-area">Clique aqui para testar o evento 'click'</p>
-    <p id="dbclickArea" class="event-area">Clique duas vezes aqui para testar o evento 'dblclick'</p>
-    <p id="mouseoverArea" class="event-area">Passe o mouse aqui para testar o evento 'mouseover'</p>
-    <p id="mouseoutArea" class="event-area">Tire o mouse daqui para testar o evento 'mouseout'</p>
-    <p id="mousemoveArea" class="event-area">Movimente o mouse aqui para testar o evento 'mousemove'</p>
+    <div>
+        <p id="pinta">1. Pinta-me!</p> 
+
+        <button id="red">Red</button> 
+        <button id="green">Green</button>
+        <button id ="blue">Blue</button>
+         <br>
+         <br>
+
+        <button id="duploclick">2. Dê duplo clique aqui!</button>
+        <br>
+
+        <p id="sob">3. Passe o Mouse Aqui!</p>
+        <p id="out">4. Passe o Mouse sobre mim</p>
+    </div>
+    
+
+
+
 
     <h2>Eventos de Teclado</h2>
-    <input type="text" id="textInput" placeholder="Digite algo aqui..." />
-    <p id="keyboardOutput"></p>
-
+    
     <h2>Eventos de Formulário</h2>
-    <form id="form">
-        <label for="formInput">Nome:</label>
-        <input type="text" id="formInput" required />
-        <button type="submit">Enviar</button>
-    </form>
-    <p id="formOutput"></p>
-
-    <div class="output">
-        <h3>Resultado:</h3>
-        <p id="result">Aqui aparecerão os resultados dos eventos.</p>
-    </div>
+    
 
     <script src="script.js"></script>
 </body>
