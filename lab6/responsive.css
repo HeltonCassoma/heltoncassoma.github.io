@@ -1,77 +1,31 @@
-/* Definições globais e layout padrão */
-section {
-    padding: 10px;
-    
-    border: 1px solid #ddd;
-}
+* {box-sizing: border-box;}
 
-/* Estilos para Mobile Portrait (até 480px) */
+
 @media (max-width: 480px) {
-    body {
-        grid-template-columns: 1fr;
+    nav a {
+        color: red;
     }
-    header, footer {
-        font-size: 14px;
-    }
-    main {
-        padding: 10px;
+    .dropdown-content a {
+        font-size: 2em;
     }
 }
 
 /* Estilos para Mobile Landscape (até 768px) */
 @media (max-width: 768px) {
-    body {
-        grid-template-columns: 1fr;
-    }
-    header, footer {
-        font-size: 16px;
-    }
-    section {
-        padding: 15px;
-    }
+    
 }
 
 /* Estilos para Tablet (até 1024px) */
 @media (max-width: 1024px) {
-    body {
-        grid-template-columns: 1fr 1fr;
-    }
-    header, footer {
-        font-size: 18px;
-    }
-    main {
-        grid-column: span 2;
-    }
-    section {
-        padding: 20px;
-    }
+    
 }
 
 /* Estilos para Laptop (até 1440px) */
 @media (max-width: 1440px) {
-    body {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    main {
-        grid-column: span 3;
-    }
-    header, footer {
-        font-size: 20px;
-    }
-    section {
-        padding: 25px;
-    }
+    
 }
 
 /* Estilos para 4K (2560px ou mais) */
 @media (min-width: 2560px) {
-    body {
-        grid-template-columns: repeat(4, 1fr);
-    }
-    header, footer {
-        font-size: 24px;
-    }
-    section {
-        padding: 30px;
-    }
+    
 }
