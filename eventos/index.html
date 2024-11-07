@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Eventos em JavaScript</title>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <h1>Exemplo de Eventos em JavaScript</h1>
 
     <h2>Eventos de Rato</h2>
-    <p id="clickArea" style="padding: 10px; background-color: #e0e0e0;">Clique aqui para testar o evento 'click'</p>
-    <p id="dbclickArea" style="padding: 10px; background-color: #d0d0d0;">Clique duas vezes aqui para testar o evento 'dblclick'</p>
-    <p id="mouseoverArea" style="padding: 10px; background-color: #b0b0b0;">Passe o mouse aqui para testar o evento 'mouseover'</p>
-    <p id="mouseoutArea" style="padding: 10px; background-color: #a0a0a0;">Tire o mouse daqui para testar o evento 'mouseout'</p>
-    <p id="mousemoveArea" style="padding: 10px; background-color: #909090;">Movimente o mouse aqui para testar o evento 'mousemove'</p>
+    <p id="clickArea" class="event-area">Clique aqui para testar o evento 'click'</p>
+    <p id="dbclickArea" class="event-area">Clique duas vezes aqui para testar o evento 'dblclick'</p>
+    <p id="mouseoverArea" class="event-area">Passe o mouse aqui para testar o evento 'mouseover'</p>
+    <p id="mouseoutArea" class="event-area">Tire o mouse daqui para testar o evento 'mouseout'</p>
+    <p id="mousemoveArea" class="event-area">Movimente o mouse aqui para testar o evento 'mousemove'</p>
 
     <h2>Eventos de Teclado</h2>
     <input type="text" id="textInput" placeholder="Digite algo aqui..." />
@@ -33,6 +33,7 @@
         <h3>Resultado:</h3>
         <p id="result">Aqui aparecerão os resultados dos eventos.</p>
     </div>
-</body>
 
+    <script src="script.js"></script>
+</body>
 </html>

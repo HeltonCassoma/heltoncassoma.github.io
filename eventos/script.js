@@ -1,5 +1,5 @@
- // Evento de Rato
- document.getElementById("clickArea").addEventListener("click", function() {
+// Evento de Rato
+document.getElementById("clickArea").addEventListener("click", function() {
     document.getElementById("result").innerText = "Evento 'click' ativado!";
 });
 
