@@ -117,7 +117,6 @@ document.addEventListener('keyup', function(event) {
     teclado2.style.backgroundColor = '#3498db';
 });
 
-// script.js
 
 // Seleciona os campos do formulário
 let campoNome = document.getElementById('Nome');
@@ -150,4 +149,3 @@ formulario.addEventListener('submit', function(event) {
         // formulário.submit(); // Enviar o formulário manualmente, se necessário
     }
 });
-
