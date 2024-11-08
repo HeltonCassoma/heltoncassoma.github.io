@@ -140,7 +140,7 @@ formulario.addEventListener('submit', function(event) {
         mensagemLabel.style.display = 'block'; // Torna a label visível
     } else {
         // Se os campos estiverem preenchidos, exibe a mensagem com o nome e a idade
-        mensagemLabel.textContent = nome1 + ' tem ' + numero + ' anos!';
+        mensagemLabel.textContent = 'Olá, o '+nome1 + ' tem ' + numero + ' anos!';
         mensagemLabel.style.color = 'white'; // Opcional: muda a cor para indicar sucesso
         mensagemLabel.style.display = 'block'; // Torna a label visível
     }
