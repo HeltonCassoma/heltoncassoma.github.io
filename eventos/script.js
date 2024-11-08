@@ -120,17 +120,9 @@ document.addEventListener('keyup', function(event) {
 
 // Seleciona os campos do formulário
 let campoNome = document.getElementById('Nome');
-let campoEmail = document.getElementById('Email');
+let campoNumero = document.getElementById('Number');
 let formulario = document.getElementById('form1');
-
-// Adiciona o ouvinte de evento 'change' aos campos
-campoNome.addEventListener('change', function() {
-    console.log('O nome foi alterado para: ' + campoNome.value);
-});
-
-campoEmail.addEventListener('change', function() {
-    console.log('O e-mail foi alterado para: ' + campoEmail.value);
-});
+let mensagemLabel = document.getElementById('mensagem');
 
 // Adiciona o ouvinte de evento 'submit' para interceptar o envio do formulário
 formulario.addEventListener('submit', function(event) {
@@ -139,13 +131,18 @@ formulario.addEventListener('submit', function(event) {
 
     // Exemplo de validação (simples)
     let nome1 = campoNome.value;
-    let email1 = campoEmail.value;
+    let numero = campoNumero.value;
 
-    if (!nome1 || !email1) {
-        alert('Por favor, preencha todos os campos.');
+    if (!nome1 || !numero) {
+        // Se os campos não estiverem preenchidos, exibe uma mensagem de erro
+        mensagemLabel.textContent = 'Por favor, preencha todos os campos.';
+        mensagemLabel.style.color = 'red';
+        mensagemLabel.style.display = 'block'; // Torna a label visível
     } else {
-        alert('Formulário enviado com sucesso!');
-        // Aqui você pode enviar o formulário ou fazer outras ações
-        // formulário.submit(); // Enviar o formulário manualmente, se necessário
+        // Se os campos estiverem preenchidos, exibe a mensagem com o nome e a idade
+        mensagemLabel.textContent = nome1 + ' tem ' + numero + ' anos!';
+        mensagemLabel.style.color = 'white'; // Opcional: muda a cor para indicar sucesso
+        mensagemLabel.style.display = 'block'; // Torna a label visível
     }
 });
+

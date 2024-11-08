@@ -45,17 +45,19 @@
     </fieldset>
     
     <h2>Eventos de Formulário</h2>
-    <fieldset id="form1">
-        <label for="Nome">Nome:</label>
-        <input type="text" id="Nome" name="nome" required>
+    
 
-        <label for="Email"> Email:</label>
-        <input type="email" name="Email" id="email" required>
+<form id="form1">
+    <label for="Nome">Nome:</label>
+    <input type="text" id="Nome" name="nome" required>
 
-        <button type="submit">Enviar</button>
+    <label for="Number">Idade:</label>
+    <input type="number" name="Number" id="Number" required>
 
-    </fieldset>
+    <button type="submit">Enviar</button>
+</form>
 
+<label id="mensagem" style="display:none;"></label>
     <script src="script.js"></script>
 </body>
 </html>

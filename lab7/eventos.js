@@ -9,15 +9,23 @@ mensagem.addEventListener('mouseleave', () =>{
     mensagem.innerText = "1. Passe por aqui!";
 });
  
-document.querySelector('#red').onclick = function() {
-    document.querySelector("#pinta").style.color = "red";
-};
-document.querySelector('#green').onclick = function() {
+document.querySelectorAll('.color').forEach((button) =>  {
+    button.addEventListener('click', () => {
+        //Aqui pega a cor armazenada no atributo do botão
+        let colorir = button.dataset.color;
+
+        //Aqui aplica-se a cor no elemento <p>
+        document.getElementById('pinta').style.color = colorir;
+    });
+});
+
+
+/*document.querySelector('#green').onclick = function() {
     document.querySelector("#pinta").style.color = "green";
 };
 document.querySelector('#blue').onclick = function() {
     document.querySelector("#pinta").style.color = "blue";
-};
+}; */
 
 document.querySelector("input").oninput = function () {
     const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
@@ -25,10 +33,10 @@ document.querySelector("input").oninput = function () {
     };
 
 
-document.getElementById("fundo").onclick = function (){
-    const cor = document.getElementById("texto").value;
-    document.body.style.backgroundColor = cor;
-};
+document.querySelector('colorSelect').onchange = function(){
+    document.querySelector('body').style.backgroundColor = this.value;
+}
+
 
 let counter = 0;
 function count(){
