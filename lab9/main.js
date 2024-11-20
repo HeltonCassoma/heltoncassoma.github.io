@@ -1,37 +1,41 @@
-const produtosContainer = document.getElementById("produtos-container");
+import '/lab9/produtos.js'
 
-function renderizarProdutos(){
-produtos.forEach(produto => {
-  const article = document.createElement("article");
+document.addEventListener('DOMContentLoaded', carregarProdutos(produtos) )
 
-  article.innerHTML = 
-  `
-            <img src="${produto.imagem}" alt="Imagem do ${produto.nome}" />
-            <h3>${produto.nome}</h3>
-            <p>Preço: €${produto.preco.toFixed(2)}</p>
-            <button onclick="adicionarAoCesto(${produto.id})">Adicionar ao Cesto</button>
-        `;
-        produtosContainer.append(article);
+function carregarProdutos(produtosArg) {
+    const container = document.getElementById('produtos-container'); //o nó pai onde os artigos serão inseridos
+produtosArg.forEach(produto => {
+    const article = criarProduto(produto);
+    container.append(article);
+    const {id, title} = produto
+    console.log(id, title);
 
-  
 });
-
-
-const cestoContainer = document.getElementById("cesto-container");
-
-function adicionarAoCesto(id) {
-    const produto = produtos.find(p => p.id === id);
-    if (produto) {
-        const artigo = document.createElement("article");
-        artigo.innerHTML = `
-            <h3>${produto.nome}</h3>
-            <p>Preço: €${produto.preco.toFixed(2)}</p>
-        `;
-        cestoContainer.appendChild(artigo);
-    }
 }
-document.addEventListener("DOMContentLoaded", () => {
-  renderizarProdutos();
-});
 
+function criarProduto(produto){
+    //Criar o título
+    const subtitle = document.createElement('h3');
+    subtitle.textContent=produto.title;
+
+    //Criar Imagem
+    const imagem = document.createElement('img');
+    imagem.src = produto.image; //URL da imagem
+    imagem.alt = produto.title; //Texto alternativo
+
+    //Criar a descrição
+    const descricao = document.createElement('p');
+    descricao.textContent = produto.description;
+
+    //Criar preço
+    const preco = document.createElement('p');
+    preco.textContent = produto.price + " €"; //Formata para duas casas decimais
+
+    //Criar o elemento article e adicionar os elementos criados
+    const article = document.createElement('article');
+    article.append(subtitle, imagem, descricao, preco);
+
+ return article;
 }
+
+
