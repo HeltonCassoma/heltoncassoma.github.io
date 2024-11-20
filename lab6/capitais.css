@@ -6,9 +6,10 @@
 }
 
 header{
-    position:sticky;
     display: flex;
+    position:sticky;
     justify-content: space-between;
+
     /*color:aliceblue;*/
     background-color:darkgoldenrod;
     align-items: center;
@@ -32,6 +33,7 @@ a :last-child{
 header {
     display: flex;
     justify-content: space-around;
+
 }
 #poema{
     display:flex;
