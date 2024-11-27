@@ -8,6 +8,14 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color:teal;
+}
+#produtos-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+
 }
 
 header {
@@ -41,6 +49,7 @@ nav a:hover {
 
 main {
     padding: 1rem;
+
 }
 
 .produtos-container,
@@ -67,18 +76,18 @@ footer {
     background-color: #f4f4f4;
     margin-top: 2rem;
 }
+
 article {
     border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 1rem;
     background-color: #f9f9f9;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: calc(33.333% - 1rem);
+    width: calc(33.333% - 1rem);  
 }
 
 article img {
-    max-width: 100%;
+    max-width: 35%;
     height: auto;
     border-bottom: 1px solid #ddd;
     margin-bottom: 1rem;
@@ -95,5 +104,29 @@ article button {
 }
 
 article button:hover {
-    background-color: #0056b3;
+    background-color:lightseagreen;
+}
+ #selecione  {
+    text-align: center;
+}
+
+#cesto-container {
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-around;
+    background-color: #fff; /* Diferencia o fundo do cesto */
+    border: 2px solid #ccc;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+#cesto-container article {
+   
+    background-color: #e0ffe0; /* Fundo verde claro */
+    border-color: #00cc00; /* Borda verde */
+}
+
+#preco{
+
 }
