@@ -1,0 +1,134 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color:teal;
+}
+#produtos-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+
+}
+
+header {
+    display: flex; /* Organiza os itens em linha */
+    justify-content: space-around; 
+    align-items: center;
+    background-color:purple; /* Cor de fundo */
+    padding: 1rem;
+    margin: 0;
+    gap: 1rem; /* Espaçamento entre os itens */
+    border-bottom: 2px solid #0056b3;
+   
+}
+#loja{
+    color:white;
+}
+
+nav a {
+    text-decoration: none; /* Remove sublinhado */
+    color: white; /* Cor do texto */
+    font-weight: bold; /* Negrito */
+    padding: 0.5rem 1rem; /* Espaçamento interno */
+    border-radius: 4px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease; /* Efeito ao passar o mouse */
+}
+
+nav a:hover {
+    background-color:black; /* Cor ao passar o mouse */
+    color: #f9f9f9; /* Cor do texto ao passar o mouse */
+}
+
+main {
+    padding: 1rem;
+
+}
+
+.produtos-container,
+.cesto-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.produtos-container article,
+.cesto-container article {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    width: calc(33.333% - 1rem);
+    text-align: center;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    margin-top: 2rem;
+}
+
+article {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: calc(33.333% - 1rem);  
+}
+
+article img {
+    max-width: 35%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1rem;
+}
+
+article button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+article button:hover {
+    background-color:lightseagreen;
+}
+ #selecione  {
+    text-align: center;
+}
+
+#cesto-container {
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-around;
+    background-color: #fff; /* Diferencia o fundo do cesto */
+    border: 2px solid #ccc;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+#cesto-container article {
+   
+    background-color: #e0ffe0; /* Fundo verde claro */
+    border-color: #00cc00; /* Borda verde */
+}
+
+ #options{
+    display: flex;
+    background-color: white;
+    justify-content:center;
+ }

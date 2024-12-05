@@ -54,17 +54,11 @@ function criarProduto(produto) {
     button.textContent = '+ Adicionar ao cesto';
     button.addEventListener('click', () => adicionarAoCesto(produto));
 
-    const button2 = document.getElementById('todosProdutos');
-    button2.textContent = 'Adicionar todos produtos ao cesto';
-    button2.addEventListener('click', () => adicionarTodosAoCesto(produto));
-
     const article = document.createElement('article');
     article.append(subtitle, imagem, descricao, preco, button);
+
     return article;
 }
-
-const enviarMorada = document.getElementById('enviar');
-enviarMorada.addEventListener('click', ()=> ('POST'));
 
 // Função para adicionar produto ao cesto
 function adicionarAoCesto(produto) {
@@ -74,12 +68,6 @@ function adicionarAoCesto(produto) {
     atualizaCesto();
 }
 
-function adicionarTodosAoCesto(produto){
-    const todosProdutos = JSON.parse(localStorage.getItem('todos-produtos')) || [];
-    produtosSelecionados.push(produto);
-    localStorage.setItem('todos-produtos', JSON.stringify(todosProdutos));
-    atualizaCesto();
-}
 // Atualizar o cesto na interface
 function atualizaCesto() {
     const produtosSelecionados = JSON.parse(localStorage.getItem('produtos-selecionados')) || [];
@@ -103,7 +91,6 @@ function atualizaCesto() {
     totalElement.textContent = `Custo total: ${total.toFixed(2)} €`;
     containerCesto.append(totalElement);
 }
-
 
 // Cria o artigo do produto no cesto
 function criaProdutoCesto(produto) {
@@ -129,8 +116,6 @@ function criaProdutoCesto(produto) {
 
     return article;
 }
-
-
 
 // Remover produto do cesto
 function removerDoCesto(produto) {
