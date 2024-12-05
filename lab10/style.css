@@ -128,5 +128,7 @@ article button:hover {
 }
 
  #options{
+    display: flex;
     background-color: white;
+    justify-content:center;
  }

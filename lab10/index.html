@@ -18,17 +18,29 @@
     </header>
 
     <main>
-        <section id="options">
+    <section id="options">
 
-          <label for="category-select">Filtrar por Categoria: </label>
+        <label for="category-select">Filtrar por Categoria: </label>
           <select  id="category-select">
+            
             <option value="1">Todas as Categorias</option>
             <option value="2">T-shirts</option>
             <option value="3">Canecas</option>
             <option value="4">Meias</option>
           </select>
           
+       <label for="">Ordenar:</label>
+          <select id="order-select">
+            <option value="asc">Preço crescente</option>
+            <option value="desc">Preço decrescente</option>
+          </select>
+        <label for="">Procurar: </label>
+        <input type="text" id="search-input" placeholder="Pesquisar produtos...">
+
+        
         </section>
+        
+        
         <section id="produtos"> 
             <h2 id="selecione">Selecione os produtos</h2> <br>
             <section id="produtos-container">
