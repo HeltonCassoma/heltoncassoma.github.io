@@ -156,7 +156,7 @@ function aplicarFiltros() {
         produto.title.toLowerCase().includes(searchTerm)
     );
 
-    produtosFiltrados.sort((a, b) => order === 'asc' ? a.price - b.price : b.price - a.price);
+    produtosFiltrados.sort((a, b) => order === 'asc' ? a.rate - b.rate : b.rate - a.rate);
 
     carregarProdutos(produtosFiltrados);
 }
