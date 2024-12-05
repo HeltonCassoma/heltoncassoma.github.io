@@ -127,6 +127,6 @@ article button:hover {
     border-color: #00cc00; /* Borda verde */
 }
 
-#preco{
-
-}
+ #options{
+    background-color: white;
+ }
